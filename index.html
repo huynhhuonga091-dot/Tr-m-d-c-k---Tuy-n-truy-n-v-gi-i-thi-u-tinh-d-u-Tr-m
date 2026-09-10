@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tràm Dược Ký - Tuyên Truyền và Giới Thiệu Tinh Dầu Tràm</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f4f6f3',
+                            100: '#e4e9e2',
+                            200: '#c5d1c2',
+                            500: '#7a8f78',
+                            600: '#5a7058',
+                            700: '#465844',
+                            800: '#384337',
+                            900: '#232b22',
+                        },
+                        amberGold: '#c5a880',
+                        roseFrame: '#b8927a'
+                    },
+                    fontFamily: {
+                        sans: ['Segoe UI', 'Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .tab-active {
+            background-color: #5a7058 !important;
+            color: #ffffff !important;
+            box-shadow: 0 4px 12px rgba(90, 112, 88, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Top Notice Banner -->
+    <div class="bg-brand-800 text-brand-100 text-xs py-2 px-4 text-center font-medium tracking-wide">
+        <i class="fa-solid fa-leaf text-amberGold mr-1"></i> Tinh Dầu Tràm Gió Nguyên Chất 100% – Đạt Hàm Lượng Cineol Chuẩn 40–60%
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-brand-100 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+            <!-- Brand Logo (Designed based on image_ab2be5.jpg) -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-12 h-12 rounded-full border border-amberGold/30 bg-[#f7f5f0] p-1 shadow-sm flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                    <svg viewBox="0 0 200 200" class="w-full h-full">
+                        <!-- Outer double circle frame -->
+                        <circle cx="100" cy="100" r="92" fill="#F8F6F0" stroke="#A68A78" stroke-width="3"/>
+                        <circle cx="100" cy="100" r="85" fill="none" stroke="#CBBBAF" stroke-width="1.5"/>
+                        
+                        <!-- Main Stem Path -->
+                        <path d="M 40 160 Q 80 140 100 100 T 160 40" fill="none" stroke="#4A614A" stroke-width="3" stroke-linecap="round"/>
+                        
+                        <!-- Balanced Leaf Pairs from base to tip -->
+                        <!-- Cặp lá 1 (Gốc cành) -->
+                        <path d="M 55 148 C 38 142 32 125 50 125 C 60 128 62 140 55 148 Z" fill="#6B8E6B" stroke="#3A4D3A" stroke-width="0.8"/>
+                        <path d="M 62 140 C 78 152 92 142 82 130 C 72 128 64 135 62 140 Z" fill="#88A788" stroke="#3A4D3A" stroke-width="0.8"/>
+                        
+                        <!-- Cặp lá 2 (Thân dưới) -->
+                        <path d="M 72 128 C 50 118 48 100 68 102 C 78 105 78 118 72 128 Z" fill="#587A58" stroke="#3A4D3A" stroke-width="0.8"/>
+                        <path d="M 80 120 C 100 128 110 115 98 104 C 88 102 82 110 80 120 Z" fill="#7A9A7A" stroke="#3A4D3A" stroke-width="0.8"/>
+                        
+                        <!-- Cặp lá 3 (Thân giữa) -->
+                        <path d="M 90 108 C 72 95 72 78 88 84 C 98 88 95 100 90 108 Z" fill="#6B8E6B" stroke="#3A4D3A" stroke-width="0.8"/>
+                        <path d="M 98 98 C 118 105 125 90 114 80 C 104 80 100 90 98 98 Z" fill="#88A788" stroke="#3A4D3A" stroke-width="0.8"/>
+
+                        <!-- Cặp lá 4 (Thân trên) -->
+                        <path d="M 110 85 C 95 72 98 55 110 62 C 118 68 115 78 110 85 Z" fill="#587A58" stroke="#3A4D3A" stroke-width="0.8"/>
+                        <path d="M 118 78 C 135 82 142 68 132 58 C 122 58 120 68 118 78 Z" fill="#7A9A7A" stroke="#3A4D3A" stroke-width="0.8"/>
+
+                        <!-- Cặp lá 5 (Gần ngọn) -->
+                        <path d="M 130 65 C 118 52 125 40 135 48 C 140 52 136 60 130 65 Z" fill="#6B8E6B" stroke="#3A4D3A" stroke-width="0.8"/>
+                        <path d="M 138 58 C 152 62 158 48 148 42 C 140 42 140 50 138 58 Z" fill="#88A788" stroke="#3A4D3A" stroke-width="0.8"/>
+                        
+                        <!-- Búp lá ngọn -->
+                        <path d="M 152 45 C 158 35 168 32 162 42 C 158 48 154 48 152 45 Z" fill="#587A58" stroke="#3A4D3A" stroke-width="0.8"/>
+                    </svg>
+                </div>
+                <div>
+                    <span class="text-xl font-bold text-brand-900 tracking-tight block leading-tight">Tràm Dược Ký</span>
+                    <span class="text-[11px] text-brand-600 font-medium tracking-wider uppercase block">Tinh Dầu Tràm Tự Nhiên</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex items-center space-x-7 text-sm font-semibold text-gray-600">
+                <a href="#quy-trinh" class="hover:text-brand-600 transition">Quy Trình</a>
+                <a href="#tac-dung" class="hover:text-brand-600 transition">Tác Dụng</a>
+                <a href="#cam-nang" class="hover:text-brand-600 transition">Cẩm Nang</a>
+                <a href="#huong-dan" class="hover:text-brand-600 transition">Hướng Dẫn Sử Dụng</a>
+                <a href="#diem-ban" class="hover:text-brand-600 transition">Điểm Bán Uy Tín</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="flex items-center space-x-3">
+                <a href="#tu-van" class="bg-brand-600 hover:bg-brand-800 text-white px-5 py-2.5 rounded-full text-xs font-bold transition-all shadow-md hover:shadow-lg flex items-center gap-2">
+                    <i class="fa-solid fa-comments"></i>
+                    <span>Tư Vấn Nhanh</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-b from-brand-50 via-white to-gray-50 py-16 lg:py-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left Column -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-white text-brand-700 px-4 py-1.5 rounded-full text-xs font-bold border border-brand-200 shadow-sm">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                        An Toàn Cho Trẻ Sơ Sinh, Mẹ Bầu và Người Cao Tuổi
+                    </div>
+                    
+                    <!-- Updated Heading based on User Request & Sketch (image_ab2ba7.jpg) -->
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-brand-900 leading-tight">
+                        Tuyên Truyền và Giới Thiệu <br class="hidden sm:inline">
+                        <span class="text-brand-600 font-extrabold">Tinh Dầu Tràm</span>
+                    </h1>
+
+                    <p class="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Chiết xuất từ những cành lá tràm gió tươi đọng sương sớm, lưu giữ trọn vẹn <strong>hàm lượng Cineol tự nhiên (40-60%)</strong> giúp kháng khuẩn, giữ ấm cơ thể và bảo vệ sức khỏe hô hấp toàn diện.
+                    </p>
+
+                    <!-- Quick Highlights Grid -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 text-left">
+                        <div class="p-3 bg-white rounded-xl border border-brand-100 shadow-sm">
+                            <i class="fa-solid fa-shield-virus text-brand-600 text-lg mb-1 block"></i>
+                            <span class="text-xs font-bold text-gray-800 block">Kháng Khuẩn</span>
+                            <span class="text-[11px] text-gray-500">Sát khuẩn hô hấp</span>
+                        </div>
+                        <div class="p-3 bg-white rounded-xl border border-brand-100 shadow-sm">
+                            <i class="fa-solid fa-temperature-arrow-up text-amber-600 text-lg mb-1 block"></i>
+                            <span class="text-xs font-bold text-gray-800 block">Giữ Ấm Cơ Thể</span>
+                            <span class="text-[11px] text-gray-500">Phòng gió và lạnh</span>
+                        </div>
+                        <div class="p-3 bg-white rounded-xl border border-brand-100 shadow-sm">
+                            <i class="fa-solid fa-temperature-arrow-up text-amber-600 text-lg mb-1 block"></i>
+                            <span class="text-xs font-bold text-gray-800 block">Giữ Ấm Cơ Thể</span>
+                            <span class="text-[11px] text-gray-500">Phòng gió & lạnh</span>
+                        </div>
+                        <div class="p-3 bg-white rounded-xl border border-brand-100 shadow-sm">
+                            <i class="fa-solid fa-mosquito text-rose-500 text-lg mb-1 block"></i>
+                            <span class="text-xs font-bold text-gray-800 block">Dịu Vết Muỗi</span>
+                            <span class="text-[11px] text-gray-500">Giảm sưng ngứa</span>
+                        </div>
+                        <div class="p-3 bg-white rounded-xl border border-brand-100 shadow-sm">
+                            <i class="fa-solid fa-wind text-indigo-500 text-lg mb-1 block"></i>
+                            <span class="text-xs font-bold text-gray-800 block">Thư Giãn</span>
+                            <span class="text-[11px] text-gray-500">Thanh lọc không khí</span>
+                        </div>
+                    </div>
+
+                    <!-- Hero CTA Buttons -->
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#huong-dan" class="bg-brand-800 hover:bg-brand-900 text-white px-7 py-3.5 rounded-2xl font-bold text-sm transition-all shadow-lg hover:shadow-xl">
+                            <i class="fa-solid fa-book-open mr-2"></i>Xem Hướng Dẫn Sử Dụng
+                        </a>
+                        <a href="#tu-van" class="bg-white hover:bg-brand-50 text-brand-800 border-2 border-brand-200 px-6 py-3 rounded-2xl font-bold text-sm transition-all">
+                            <i class="fa-solid fa-sliders mr-2"></i>Công Cụ Tư Vấn
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Right Column (Image Display) -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <!-- Card decoration -->
+                        <div class="absolute -top-4 -left-4 w-24 h-24 bg-brand-200/50 rounded-full blur-2xl"></div>
+                        <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-amberGold/20 rounded-full blur-2xl"></div>
+                        
+                        <div class="relative rounded-3xl overflow-hidden border-8 border-white shadow-2xl bg-gradient-to-b from-brand-100 to-white p-2">
+                            <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80" alt="[Chai tinh dầu tràm gió nguyên chất Tràm Dược Ký]" class="w-full h-80 object-cover rounded-2xl shadow-inner">
+                            <div class="p-4 bg-white/95 rounded-xl mt-2 border border-brand-100 text-center">
+                                <span class="font-bold text-brand-900 text-sm block">Tràm Dược Ký - Tinh Dầu Tràm Gió</span>
+                                <span class="text-xs text-gray-500">Chai thủy tinh tối màu bảo quản chuẩn 100% dưỡng chất</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1: HÀNH TRÌNH TẠO NÊN CHẤT LƯỢNG (5 BƯỚC) -->
+    <section id="quy-trinh" class="py-16 md:py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-600 font-bold text-xs uppercase tracking-widest block mb-2">Quy Trình Khép Kín</span>
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-brand-900">Hành Trình Tạo Nên Chất Lượng</h2>
+                <p class="text-gray-500 text-sm sm:text-base mt-2">Từ cành lá tươi trên đồng quê đến giọt tinh dầu đong đầy hương thơm tinh khiết</p>
+            </div>
+
+            <!-- Steps Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+                <!-- Step 1 -->
+                <div class="relative bg-brand-50 p-6 rounded-2xl border border-brand-100 hover:shadow-lg transition-all group">
+                    <div class="w-10 h-10 rounded-xl bg-brand-600 text-white font-bold flex items-center justify-center text-sm mb-4 group-hover:scale-110 transition-transform">01</div>
+                    <h3 class="font-bold text-brand-900 text-base mb-2">Chọn Lọc Tự Nhiên</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        Những cành lá Tràm gió tươi ngon nhất được bà con thu hái vào sáng sớm – thời điểm lá đọng nhiều dưỡng chất và đong đầy hương thơm tinh khiết nhất.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="relative bg-brand-50 p-6 rounded-2xl border border-brand-100 hover:shadow-lg transition-all group">
+                    <div class="w-10 h-10 rounded-xl bg-brand-600 text-white font-bold flex items-center justify-center text-sm mb-4 group-hover:scale-110 transition-transform">02</div>
+                    <h3 class="font-bold text-brand-900 text-base mb-2">Làm Sạch Cẩn Thận</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        Lá tràm được rửa sạch nhẹ nhàng, loại bỏ hết bụi bẩn tự nhiên trước khi bước vào đoạn đường chưng cất.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="relative bg-brand-50 p-6 rounded-2xl border border-brand-100 hover:shadow-lg transition-all group">
+                    <div class="w-10 h-10 rounded-xl bg-brand-600 text-white font-bold flex items-center justify-center text-sm mb-4 group-hover:scale-110 transition-transform">03</div>
+                    <h3 class="font-bold text-brand-900 text-base mb-2">Chưng Cất Tận Tâm</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        Nhờ sức nóng của hơi nước khép kín, từng giọt tinh dầu tràm quý giá từ từ tách ra, giữ trọn vẹn sự tinh túy vốn có của cỏ cây.
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="relative bg-brand-50 p-6 rounded-2xl border border-brand-100 hover:shadow-lg transition-all group">
+                    <div class="w-10 h-10 rounded-xl bg-brand-600 text-white font-bold flex items-center justify-center text-sm mb-4 group-hover:scale-110 transition-transform">04</div>
+                    <h3 class="font-bold text-brand-900 text-base mb-2">Tách Chiết và Lắng</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        Tinh dầu nhẹ nhàng nổi lên trên bề mặt nước ngưng tụ, được thu gom tỉ mỉ và lọc trong để đảm bảo độ tinh khiết cao nhất.
+                    </p>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="relative bg-brand-50 p-6 rounded-2xl border border-brand-100 hover:shadow-lg transition-all group">
+                    <div class="w-10 h-10 rounded-xl bg-brand-600 text-white font-bold flex items-center justify-center text-sm mb-4 group-hover:scale-110 transition-transform">05</div>
+                    <h3 class="font-bold text-brand-900 text-base mb-2">Gửi Trao Trọn Vẹn</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        Tinh dầu thành phẩm được đựng trong chai thủy tinh tối màu giúp giữ nguyên hương thơm và chất lượng như ngày đầu mới chưng cất.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: TÁC DỤNG THỰC TẾ & GIÁ TRỊ MANG LẠI -->
+    <section id="tac-dung" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-600 font-bold text-xs uppercase tracking-widest block mb-2">Lợi Ích Sức Khỏe</span>
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-brand-900">Tác Dụng Thực Tế và Giá Trị Mang Lại</h2>
+                <p class="text-gray-500 text-sm sm:text-base mt-2">Bảo vệ sức khỏe chủ động bằng giải pháp thảo mộc thiên nhiên</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Benefit 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition-all">
+                    <div class="w-14 h-14 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-lungs"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-brand-900 mb-3">Kháng Khuẩn và Hỗ Trợ Hô Hấp</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Hàm lượng Cineol cao giúp sát khuẩn đường hô hấp, làm dịu cơn ho, long đờm và phòng ngừa cảm cúm hiệu quả cho cả người lớn lẫn trẻ nhỏ.
+                    </p>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition-all">
+                    <div class="w-14 h-14 bg-amber-100 text-amber-700 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-temperature-three-quarters"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-brand-900 mb-3">Giữ Ấm và Bảo Vệ Cơ Thể</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Tác động sinh nhiệt tự nhiên giúp phòng ngừa trúng gió, cảm lạnh cho trẻ nhỏ, phụ nữ sau sinh và người cao tuổi trong những ngày se lạnh.
+                    </p>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition-all">
+                    <div class="w-14 h-14 bg-rose-100 text-rose-700 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-hand-dots"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-brand-900 mb-3">Làm Dịu Vết Côn Trùng Cắn</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Đặc tính kháng viêm tự nhiên giúp giảm sưng, ngứa và dịu da nhanh chóng khi bị muỗi hoặc các loại côn trùng đốt.
+                    </p>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition-all">
+                    <div class="w-14 h-14 bg-indigo-100 text-indigo-700 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-spray-can-sparkles"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-brand-900 mb-3">Thư Giãn và Khử Khuẩn</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Hương thơm thảo mộc tự nhiên giúp thanh lọc không gian sống, tiêu diệt nấm mốc trong phòng và giảm căng thẳng thần kinh.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: CẨM NANG LƯU Ý QUAN TRỌNG -->
+    <section id="cam-nang" class="py-16 md:py-24 bg-brand-800 text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-200 font-bold text-xs uppercase tracking-widest block mb-2">Sử Dụng An Toàn</span>
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white">Cẩm Nang Lưu Ý Quan Trọng</h2>
+                <p class="text-brand-100 text-sm sm:text-base mt-2">Những nguyên tắc vàng bạn không nên bỏ qua khi sử dụng tinh dầu tràm</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Note 1 -->
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/10 flex items-start space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-amberGold/20 text-amberGold flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-child-skin"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-white mb-1">An Toàn Cho Trẻ Nhỏ</h3>
+                        <p class="text-sm text-gray-300 leading-relaxed">
+                            Tránh bôi tinh dầu quá gần vùng mắt, mũi và miệng của trẻ sơ sinh để ngăn ngừa nguy cơ kích ứng niêm mạc nhạy cảm của bé.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Note 2 -->
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/10 flex items-start space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-amberGold/20 text-amberGold flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-white mb-1">Điều Kiện Bảo Quản</h3>
+                        <p class="text-sm text-gray-300 leading-relaxed">
+                            Đậy kín nắp ngay sau khi sử dụng, bảo quản ở nơi khô ráo, thoáng mát và tránh ánh nắng mặt trời chiếu trực tiếp.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Note 3 -->
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/10 flex items-start space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-amberGold/20 text-amberGold flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-vial-circle-check"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-white mb-1">Kiểm Tra Độ Nhạy Cảm</h3>
+                        <p class="text-sm text-gray-300 leading-relaxed">
+                            Thoa 1 giọt tinh dầu đã pha loãng lên vùng da bên trong cẳng tay và theo dõi trong 24 giờ trước khi dùng trên diện rộng.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Note 4 -->
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/10 flex items-start space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-amberGold/20 text-amberGold flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-white mb-1">Tiêu Chuẩn Chất Lượng</h3>
+                        <p class="text-sm text-gray-300 leading-relaxed">
+                            Sử dụng tinh dầu tràm gió nguyên chất 100% (hàm lượng 1,8-Cineol đạt từ 40–60%). Tránh dùng các loại tinh dầu tổng hợp tạo mùi hóa chất.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: HƯỚNG DẪN SỬ DỤNG ĐÚNG CÁCH VÀ AN TOÀN (TABS WITH PROPER LINE BREAKS) -->
+    <section id="huong-dan" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brand-600 font-bold text-xs uppercase tracking-widest block mb-2">Chi Tiết Hướng Dẫn</span>
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-brand-900">Hướng Dẫn Sử Dụng Đúng Cách và An Toàn</h2>
+                <p class="text-gray-500 text-sm sm:text-base mt-2">Chọn nhóm đối tượng bên dưới để xem chi tiết công dụng và hướng dẫn từng bước rõ ràng</p>
+            </div>
+
+            <!-- Interactive Tabs Header -->
+            <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10">
+                <button onclick="switchTab('tab-baby')" id="btn-tab-baby" class="tab-btn tab-active px-5 py-3 rounded-2xl font-bold text-xs sm:text-sm transition-all bg-gray-100 text-gray-700 hover:bg-brand-50">
+                    <i class="fa-solid fa-baby mr-2"></i>Trẻ Sơ Sinh và Nhỏ
+                </button>
+                <button onclick="switchTab('tab-pregnant')" id="btn-tab-pregnant" class="tab-btn px-5 py-3 rounded-2xl font-bold text-xs sm:text-sm transition-all bg-gray-100 text-gray-700 hover:bg-brand-50">
+                    <i class="fa-solid fa-person-pregnant mr-2"></i>Phụ Nữ Mang Thai
+                </button>
+                <button onclick="switchTab('tab-postpartum')" id="btn-tab-postpartum" class="tab-btn px-5 py-3 rounded-2xl font-bold text-xs sm:text-sm transition-all bg-gray-100 text-gray-700 hover:bg-brand-50">
+                    <i class="fa-solid fa-person-breastfeeding mr-2"></i>Phụ Nữ Sau Sinh
+                </button>
+                <button onclick="switchTab('tab-respiratory')" id="btn-tab-respiratory" class="tab-btn px-5 py-3 rounded-2xl font-bold text-xs sm:text-sm transition-all bg-gray-100 text-gray-700 hover:bg-brand-50">
+                    <i class="fa-solid fa-head-side-cough mr-2"></i>Bệnh Đường Hô Hấp
+                </button>
+                <button onclick="switchTab('tab-elderly')" id="btn-tab-elderly" class="tab-btn px-5 py-3 rounded-2xl font-bold text-xs sm:text-sm transition-all bg-gray-100 text-gray-700 hover:bg-brand-50">
+                    <i class="fa-solid fa-person-cane mr-2"></i>Người Cao Tuổi
+                </button>
+            </div>
+
+            <!-- Tab Content Container -->
+            <div class="max-w-4xl mx-auto">
+                
+                <!-- TAB 1: TRẺ SƠ SINH & TRẺ NHỎ -->
+                <div id="tab-baby" class="tab-content bg-brand-50 p-6 sm:p-10 rounded-3xl border border-brand-100 shadow-sm">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <span class="p-3 bg-brand-600 text-white rounded-2xl text-lg"><i class="fa-solid fa-baby"></i></span>
+                        <div>
+                            <h3 class="text-xl font-bold text-brand-900">Trẻ Sơ Sinh & Trẻ Nhỏ</h3>
+                            <p class="text-xs text-brand-600 font-medium">Bảo vệ bé yêu khỏi cảm ho, giữ ấm và đuổi muỗi</p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-5 text-sm text-gray-700">
+                        <div class="bg-white p-5 rounded-2xl border border-brand-100 shadow-sm">
+                            <strong class="text-brand-900 text-base block mb-1.5"><i class="fa-solid fa-bullseye text-brand-600 mr-2"></i>Công dụng chính:</strong>
+                            <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">Giữ ấm cơ thể, phòng ngừa cảm ho / sổ mũi, làm giảm đầy hơi, đuổi muỗi và làm dịu vết muỗi cắn.</p>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-2xl border border-brand-100 shadow-sm">
+                            <strong class="text-brand-900 text-base block mb-3"><i class="fa-solid fa-list-check text-brand-600 mr-2"></i>Cách dùng đúng cách (Xuống dòng từng mục):</strong>
+                            
+                            <ul class="space-y-3 text-xs sm:text-sm text-gray-700">
+                                <li class="flex items-start gap-2.5 bg-brand-5/50 p-2.5 rounded-xl border border-brand-100/60">
+                                    <span class="w-6 h-6 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">1</span>
+                                    <div>
+                                        <strong>Nhỏ vào nước tắm ấm:</strong> Nhỏ từ 3 – 5 giọt tinh dầu vào chậu nước tắm ấm của bé, khuấy đều trước khi tắm.
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-2.5 bg-brand-5/50 p-2.5 rounded-xl border border-brand-100/60">
+                                    <span class="w-6 h-6 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">2</span>
+                                    <div>
+                                        <strong>Thoa giữ ấm cơ thể:</strong> Thoa 1 giọt lên lòng bàn chân, vùng ngực hoặc lưng của bé sau khi tắm hoặc trước khi đi ngủ.
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-2.5 bg-brand-5/50 p-2.5 rounded-xl border border-brand-100/60">
+                                    <span class="w-6 h-6 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">3</span>
+                                    <div>
+                                        <strong>Massage giảm đầy hơi:</strong> Xoa nóng hai bàn tay mẹ rồi nhẹ nhàng massage quanh vùng bụng theo chiều kim đồng hồ.
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-2.5 bg-brand-5/50 p-2.5 rounded-xl border border-brand-100/60">
+                                    <span class="w-6 h-6 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">4</span>
+                                    <div>
+                                        <strong>Đuổi muỗi và Dịu vết cắn:</strong> Nhỏ 1 giọt lên quần áo/vắt khăn quàng cổ để đuổi muỗi, hoặc thoa 1 giọt trực tiếp lên vết muỗi cắn.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-rose-50 border border-rose-200 text-rose-800 p-4 rounded-2xl text-xs sm:text-sm flex items-start gap-3">
+                            <i class="fa-solid fa-triangle-exclamation text-rose-600 text-lg shrink-0 mt-0.5"></i>
+                            <div>
+                                <strong>Lưu ý an toàn:</strong> Không thoa trực tiếp lên mặt, vùng mắt, mũi hoặc vết thương hở của bé; tuyệt đối không cho bé uống.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 2: PHỤ NỮ MANG THAI -->
+                <div id="tab-pregnant" class="tab-content hidden bg-brand-50 p-6 sm:p-10 rounded-3xl border border-brand-100 shadow-sm">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <span class="p-3 bg-brand-600 text-white rounded-2xl text-lg"><i class="fa-solid fa-person-pregnant"></i></span>
+                        <div>
+                            <h3 class="text-xl font-bold text-brand-900">Phụ Nữ Mang Thai</h3>
+                            <p class="text-xs text-brand-600 font-medium">Thư giãn tinh thần, thông mũi và giảm nghén an toàn</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-5 text-sm text-gray-700">
+                        <div class="bg-white p-5 rounded-2xl border border-brand-100 shadow-sm">
+                            <strong class="text-brand-900 text-base block mb-1.5"><i class="fa-solid fa-bullseye text-brand-600 mr-2"></i>Công dụng chính:</strong>
+                            <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">Giảm nghẹt mũi, phòng ngừa cảm lạnh, giảm triệu chứng ốm nghén, mang lại cảm giác thư giãn và giảm đau chuột rút.</p>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-2xl border border-brand-100 shadow-sm">
+                            <strong class="text-brand-900 text-base block mb-3"><i class="fa-solid fa-list-check text-brand-600 mr-2"></i>Cách dùng chi tiết:</strong>
+                            
+                            <ul class="space-y-3 text-xs sm:text-sm text-gray-700">
+                                <li class="flex items-start gap-2.5 bg-brand-5/50 p-2.5 rounded-xl border border-brand-100/60">
+                                    <span class="w-6 h-6 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">1</span>
+                                    <div>
+                                        <strong>Xông phòng thanh lọc không khí:</strong> Nhỏ từ 3 – 5 giọt vào máy khuếch tán hoặc đĩa đèn xông tinh dầu giúp làm sạch không khí và thư giãn.
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-2.5 bg-brand-5/50 p-2.5 rounded-xl border border-brand-100/60">
+                                    <span class="w-6 h-6 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">2</span>
+                                    <div>
+                                        <strong>Massage bắp chân / vai:</strong> Pha 2 – 3 giọt tinh dầu với 1 muỗng canh dầu nền (dầu dừa/dầu hạnh nhân) rồi xoa bóp nhẹ vùng vai gáy hoặc bắp chân.
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-2.5 bg-brand-5/50 p-2.5 rounded-xl border border-brand-100/60">
+                                    <span class="w-6 h-6 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">3</span>
+                                    <div>
+                                        <strong>Giữ ấm trước khi ngủ:</strong> Thoa 1 – 2 giọt vào lòng bàn chân giúp ngủ ngon hơn và tránh bị nhiễm lạnh ban đêm.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-rose-50 border border-rose-200 text-rose-800 p-4 rounded-2xl text-xs sm:text-sm flex items-start gap-3">
+                            <i class="fa-solid fa-triangle-exclamation text-rose-600 text-lg shrink-0 mt-0.5"></i>
+                            <div>
+                                <strong>Lưu ý an toàn:</strong> Tuyệt đối không thoa tinh dầu lên vùng bụng; không cho uống; hạn chế dùng trong 3 tháng đầu thai kỳ nếu cơ thể nhạy cảm.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 3: PHỤ NỮ SAU SINH -->
+                <div id="tab-postpartum" class="tab-content hidden bg-brand-50 p-6 sm:p-10 rounded-3xl border border-brand-100 shadow-sm">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <span class="p-3 bg-brand-600 text-white rounded-2xl text-lg"><i class="fa-solid fa-person-breastfeeding"></i></span>
+                        <div>
+                            <h3 class="text-xl font-bold text-brand-900">Phụ Nữ Sau Sinh và Cho Con Bú</h3>
+                            <p class="text-xs text-brand-600 font-medium">Tránh gió độc, giữ ấm và hỗ trợ phục hồi sức khỏe</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-5 text-sm text-gray-700">
+                        <div class="bg-white p-5 rounded-2xl border border-brand-100 shadow-sm">
+                            <strong class="text-brand-900 text-base block mb-1.5"><i class="fa-solid fa-bullseye text-brand-600 mr-2"></i>Công dụng chính:</strong>
+                            <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">Tránh gió độc, giữ ấm toàn thân, giảm đau nhức xương khớp, làm sạch không khí và hỗ trợ cơ thể nhanh hồi phục.</p>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-2xl border border-brand-100 shadow-sm">
+                            <strong class="text-brand-900 text-base block mb-3"><i class="fa-solid fa-list-check text-brand-600 mr-2"></i>Cách dùng chi tiết:</strong>
+                            
+                            <ul class="space-y-3 text-xs sm:text-sm text-gray-700">
+                                <li class="flex items-start gap-2.5 bg-brand-5/50 p-2.5 rounded-xl border border-brand-100/60">
+                                    <span class="w-6 h-6 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">1</span>
+                                    <div>
+                                        <strong>Pha nước tắm hoặc xông toàn thân:</strong> Nhỏ 5 – 10 giọt vào chậu nước tắm ấm hoặc nồi nước xông giúp cơ thể nhẹ nhàng, bài tiết mồ hôi.
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-2.5 bg-brand-5/50 p-2.5 rounded-xl border border-brand-100/60">
+                                    <span class="w-6 h-6 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">2</span>
+                                    <div>
+                                        <strong>Massage ngực và sống lưng:</strong> Nhỏ 3 – 4 giọt xoa nóng ngực và dọc sống lưng giúp làm ấm phổi, giảm hẳn ho về đêm.
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-2.5 bg-brand-5/50 p-2.5 rounded-xl border border-brand-100/60">
+                                    <span class="w-6 h-6 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">3</span>
+                                    <div>
+                                        <strong>Massage quanh vùng rốn:</strong> Massage nhẹ nhàng quanh rốn giúp đẩy hơi và giảm đau bụng (chú ý tránh chạm vết mổ).
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-rose-50 border border-rose-200 text-rose-800 p-4 rounded-2xl text-xs sm:text-sm flex items-start gap-3">
+                            <i class="fa-solid fa-triangle-exclamation text-rose-600 text-lg shrink-0 mt-0.5"></i>
+                            <div>
+                                <strong>Lưu ý an toàn:</strong> Tuyệt đối không thoa lên vùng ngực và núm vú để tránh bé nuốt phải tinh dầu khi bú mẹ.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 4: BỆNH ĐƯỜNG HÔ HẤP -->
+                <div id="tab-respiratory" class="tab-content hidden bg-brand-50 p-6 sm:p-10 rounded-3xl border border-brand-100 shadow-sm">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <span class="p-3 bg-brand-600 text-white rounded-2xl text-lg"><i class="fa-solid fa-head-side-cough"></i></span>
+                        <div>
+                            <h3 class="text-xl font-bold text-brand-900">Người Có Bệnh Đường Hô Hấp</h3>
+                            <p class="text-xs text-brand-600 font-medium">Viêm xoang, viêm họng, phế quản, ho & nghẹt mũi</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-5 text-sm text-gray-700">
+                        <div class="bg-white p-5 rounded-2xl border border-brand-100 shadow-sm">
+                            <strong class="text-brand-900 text-base block mb-1.5"><i class="fa-solid fa-bullseye text-brand-600 mr-2"></i>Công dụng chính:</strong>
+                            <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">Kháng khuẩn, làm loãng đờm, thông thoáng đường thở, tiêu diệt vi khuẩn và virus trong môi trường không khí.</p>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-2xl border border-brand-100 shadow-sm">
+                            <strong class="text-brand-900 text-base block mb-3"><i class="fa-solid fa-list-check text-brand-600 mr-2"></i>Hướng dẫn phương pháp áp dụng:</strong>
+                            
+                            <ul class="space-y-3 text-xs sm:text-sm text-gray-700">
+                                <li class="flex items-start gap-2.5 bg-brand-5/50 p-2.5 rounded-xl border border-brand-100/60">
+                                    <span class="w-6 h-6 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">1</span>
+                                    <div>
+                                        <strong>Xông mũi họng:</strong> Nhỏ 3 – 5 giọt tinh dầu vào bát nước nóng, dùng khăn lớn trùm đầu xông từ 10 – 15 phút.
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-2.5 bg-brand-5/50 p-2.5 rounded-xl border border-brand-100/60">
+                                    <span class="w-6 h-6 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">2</span>
+                                    <div>
+                                        <strong>Massage ngực & sống lưng:</strong> Nhỏ 3 – 4 giọt xoa nóng ngực và dọc sống lưng giúp làm ấm phổi, giảm hẳn ho về đêm.
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-2.5 bg-brand-5/50 p-2.5 rounded-xl border border-brand-100/60">
+                                    <span class="w-6 h-6 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">3</span>
+                                    <div>
+                                        <strong>Đeo khẩu trang khi đi ra ngoài:</strong> Nhỏ 1 giọt lên mép ngoài khẩu trang giúp kháng khuẩn và thông đường thở khi di chuyển.
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-2.5 bg-brand-5/50 p-2.5 rounded-xl border border-brand-100/60">
+                                    <span class="w-6 h-6 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">4</span>
+                                    <div>
+                                        <strong>Vệ sinh không gian sống:</strong> Khuếch tán từ 5 – 8 giọt trong phòng ngủ hoặc phòng làm việc giúp khử khuẩn phòng.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-amber-50 border border-amber-200 text-amber-900 p-4 rounded-2xl text-xs sm:text-sm flex items-start gap-3">
+                            <i class="fa-solid fa-triangle-exclamation text-amber-600 text-lg shrink-0 mt-0.5"></i>
+                            <div>
+                                <strong>Lưu ý an toàn:</strong> Người bị hen suyễn nặng cần xông với liều lượng rất nhỏ trước (mùi nồng có thể gây co thắt phế quản); không nhỏ trực tiếp tinh dầu nguyên chất vào trong họng hay niêm mạc mũi.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 5: NGƯỜI CAO TUỔI -->
+                <div id="tab-elderly" class="tab-content hidden bg-brand-50 p-6 sm:p-10 rounded-3xl border border-brand-100 shadow-sm">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <span class="p-3 bg-brand-600 text-white rounded-2xl text-lg"><i class="fa-solid fa-person-cane"></i></span>
+                        <div>
+                            <h3 class="text-xl font-bold text-brand-900">Người Cao Tuổi</h3>
+                            <p class="text-xs text-brand-600 font-medium">Giảm đau nhức xương khớp, ngon giấc và phòng trúng gió</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-5 text-sm text-gray-700">
+                        <div class="bg-white p-5 rounded-2xl border border-brand-100 shadow-sm">
+                            <strong class="text-brand-900 text-base block mb-1.5"><i class="fa-solid fa-bullseye text-brand-600 mr-2"></i>Công dụng chính:</strong>
+                            <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">Giảm đau nhức xương khớp, giữ ấm đêm lạnh, cải thiện chất lượng giấc ngủ, giảm nguy cơ cảm lạnh hoặc đột quỵ do nhiễm lạnh.</p>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-2xl border border-brand-100 shadow-sm">
+                            <strong class="text-brand-900 text-base block mb-3"><i class="fa-solid fa-list-check text-brand-600 mr-2"></i>Cách dùng chi tiết:</strong>
+                            
+                            <ul class="space-y-3 text-xs sm:text-sm text-gray-700">
+                                <li class="flex items-start gap-2.5 bg-brand-5/50 p-2.5 rounded-xl border border-brand-100/60">
+                                    <span class="w-6 h-6 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">1</span>
+                                    <div>
+                                        <strong>Ngâm chân thảo mộc trước khi ngủ:</strong> Nhỏ 5 – 7 giọt tinh dầu kèm thêm ít muối hột vào chậu nước ấm, ngâm chân 15 – 20 phút.
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-2.5 bg-brand-5/50 p-2.5 rounded-xl border border-brand-100/60">
+                                    <span class="w-6 h-6 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">2</span>
+                                    <div>
+                                        <strong>Xoa bóp giảm đau khớp:</strong> Pha 3 – 5 giọt tinh dầu với dầu nền xoa bóp trực tiếp các vùng khớp đau nhức (vai gáy, đầu gối, cổ tay).
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-2.5 bg-brand-5/50 p-2.5 rounded-xl border border-brand-100/60">
+                                    <span class="w-6 h-6 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">3</span>
+                                    <div>
+                                        <strong>Thoa giữ ấm đêm lạnh:</strong> Thoa lòng bàn chân, vùng cổ và ngực trước khi đi ngủ để tránh bị hạ nhiệt độ đột ngột.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-blue-50 border border-blue-200 text-blue-900 p-4 rounded-2xl text-xs sm:text-sm flex items-start gap-3">
+                            <i class="fa-solid fa-circle-info text-blue-600 text-lg shrink-0 mt-0.5"></i>
+                            <div>
+                                <strong>Lưu ý cho người lớn tuổi:</strong> Làn da người già mỏng và khô, nên ưu tiên pha loãng tinh dầu tràm với dầu nền khi xoa bóp diện rộng để tránh hiện tượng rát da.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: CÔNG CỤ TƯ VẤN NHU CẦU TỰ ĐỘNG -->
+    <section id="tu-van" class="py-16 md:py-24 bg-gradient-to-b from-brand-50 to-white">
+        <div class="max-w-xl mx-auto px-4 sm:px-6">
+            <div class="bg-white p-8 sm:p-10 rounded-3xl shadow-xl border border-brand-100 relative">
+                <div class="text-center mb-8">
+                    <span class="w-12 h-12 bg-brand-100 text-brand-700 rounded-full inline-flex items-center justify-center text-xl mb-3">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </span>
+                    <h2 class="text-2xl font-bold text-brand-900">Tư Vấn Nhu Cầu Tự Động</h2>
+                    <p class="text-xs text-gray-500 mt-1">Cung cấp thông tin để nhận hướng dẫn chi tiết ngay tức thì</p>
+                </div>
+
+                <form id="consultationForm" onsubmit="handleConsultation(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 mb-1">1. Độ tuổi người sử dụng (*)</label>
+                        <input type="text" id="inputAge" required placeholder="VD: Trẻ 6 tháng, mẹ bầu 28 tuổi, ông 70 tuổi..." class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none transition">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 mb-1">2. Nhu cầu chính (*)</label>
+                        <input type="text" id="inputNeed" required placeholder="VD: Giảm ho, đuổi muỗi, ngâm chân, giữ ấm..." class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none transition">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 mb-1">3. Loại tinh dầu bạn đang sử dụng (nếu có)</label>
+                        <input type="text" id="inputOil" placeholder="VD: Chưa từng dùng, hoặc tên thương hiệu hiện tại..." class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none transition">
+                    </div>
+
+                    <button type="submit" class="w-full bg-brand-600 hover:bg-brand-800 text-white font-bold py-3.5 rounded-xl text-sm transition-all shadow-md">
+                        <i class="fa-solid fa-paper-plane mr-2"></i>Nhận Gợi Ý Hướng Dẫn ngay
+                    </button>
+                </form>
+
+                <!-- Interactive Result Display Box -->
+                <div id="resultBox" class="hidden mt-6 p-5 bg-emerald-50 border border-emerald-200 rounded-2xl text-xs sm:text-sm text-gray-800 space-y-2">
+                    <div class="flex items-center space-x-2 text-emerald-800 font-bold">
+                        <i class="fa-solid fa-circle-check text-emerald-600 text-lg"></i>
+                        <span>Gợi Ý Sử Dụng Phù Hợp Cho Bạn:</span>
+                    </div>
+                    <p id="resultText" class="text-gray-700 leading-relaxed pl-6"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: KÊNH PHÂN PHỐI UY TÍN -->
+    <section id="diem-ban" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-600 font-bold text-xs uppercase tracking-widest block mb-2">Đại Lý và Điểm Bán</span>
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-brand-900">Top Trang Bán Hàng Uy Tín Được Đánh Giá Cao</h2>
+                <p class="text-gray-500 text-sm sm:text-base mt-2">Dễ dàng mua tinh dầu tràm nguyên chất tại các hệ thống uy tín hàng đầu</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Channel 1 -->
+                <div class="p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-brand-200 transition-all">
+                    <div class="w-12 h-12 bg-brand-100 text-brand-700 rounded-2xl flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-hospital-user"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-brand-900 mb-2">Hệ Thống Nhà Thuốc Lớn</h3>
+                    <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                        Nhà thuốc Long Châu, Pharmacity – Chuyên phân phối các loại tinh dầu tràm chính hãng, có nguồn gốc kiểm định rõ ràng như Tràm Mệ Đoan, Tràm Cung Đình.
+                    </p>
+                </div>
+
+                <!-- Channel 2 -->
+                <div class="p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-brand-200 transition-all">
+                    <div class="w-12 h-12 bg-brand-100 text-brand-700 rounded-2xl flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-brand-900 mb-2">Hệ Thống Mẹ & Bé</h3>
+                    <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                        KidsPlaza, Con Cưng – Cung cấp các dòng tinh dầu Tràm đạt tiêu chuẩn an toàn cho trẻ sơ sinh, phụ nữ mang thai và mẹ sau sinh.
+                    </p>
+                </div>
+
+                <!-- Channel 3 -->
+                <div class="p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-brand-200 transition-all">
+                    <div class="w-12 h-12 bg-brand-100 text-brand-700 rounded-2xl flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-brand-900 mb-2">Thương Hiệu Truyền Thống</h3>
+                    <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                        Dầu tràm Huế Bảo Nhiên, Hoa Nén, Cung Đình hoặc tinh dầu Cỏ Mềm – Có bán trực tiếp tại cửa hàng chính hãng hoặc gian hàng Mall trên sàn TMĐT.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-900 text-gray-400 py-12 border-t border-brand-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-4 md:space-y-0">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-full border border-amberGold/40 bg-[#f7f5f0] p-1 flex items-center justify-center">
+                        <svg viewBox="0 0 200 200" class="w-full h-full">
+                            <circle cx="100" cy="100" r="92" fill="#F8F6F0" stroke="#A68A78" stroke-width="3"/>
+                            <circle cx="100" cy="100" r="85" fill="none" stroke="#CBBBAF" stroke-width="1.5"/>
+                            <path d="M 40 160 Q 80 140 100 100 T 160 40" fill="none" stroke="#4A614A" stroke-width="3" stroke-linecap="round"/>
+                            <path d="M 55 148 C 38 142 32 125 50 125 C 60 128 62 140 55 148 Z" fill="#6B8E6B" stroke="#3A4D3A" stroke-width="0.8"/>
+                            <path d="M 62 140 C 78 152 92 142 82 130 C 72 128 64 135 62 140 Z" fill="#88A788" stroke="#3A4D3A" stroke-width="0.8"/>
+                            <path d="M 72 128 C 50 118 48 100 68 102 C 78 105 78 118 72 128 Z" fill="#587A58" stroke="#3A4D3A" stroke-width="0.8"/>
+                            <path d="M 80 120 C 100 128 110 115 98 104 C 88 102 82 110 80 120 Z" fill="#7A9A7A" stroke="#3A4D3A" stroke-width="0.8"/>
+                            <path d="M 90 108 C 72 95 72 78 88 84 C 98 88 95 100 90 108 Z" fill="#6B8E6B" stroke="#3A4D3A" stroke-width="0.8"/>
+                            <path d="M 98 98 C 118 105 125 90 114 80 C 104 80 100 90 98 98 Z" fill="#88A788" stroke="#3A4D3A" stroke-width="0.8"/>
+                            <path d="M 110 85 C 95 72 98 55 110 62 C 118 68 115 78 110 85 Z" fill="#587A58" stroke="#3A4D3A" stroke-width="0.8"/>
+                            <path d="M 118 78 C 135 82 142 68 132 58 C 122 58 120 68 118 78 Z" fill="#7A9A7A" stroke="#3A4D3A" stroke-width="0.8"/>
+                            <path d="M 130 65 C 118 52 125 40 135 48 C 140 52 136 60 130 65 Z" fill="#6B8E6B" stroke="#3A4D3A" stroke-width="0.8"/>
+                            <path d="M 138 58 C 152 62 158 48 148 42 C 140 42 140 50 138 58 Z" fill="#88A788" stroke="#3A4D3A" stroke-width="0.8"/>
+                            <path d="M 152 45 C 158 35 168 32 162 42 C 158 48 154 48 152 45 Z" fill="#587A58" stroke="#3A4D3A" stroke-width="0.8"/>
+                        </svg>
+                    </div>
+                    <span class="text-lg font-bold text-white tracking-wide">Tràm Dược Ký</span>
+                </div>
+                <p class="text-xs text-gray-400">© 2026 Tràm Dược Ký. Tuyên truyền và giới thiệu tinh dầu tràm tự nhiên – An toàn và Tinh khiết.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript logic -->
+    <script>
+        // Switch tabs in section 4
+        function switchTab(tabId) {
+            // Hide all tab contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.add('hidden'));
+
+            // Remove active style from all tab buttons
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('tab-active');
+            });
+
+            // Show selected tab content
+            document.getElementById(tabId).classList.remove('hidden');
+
+            // Highlight selected button
+            document.getElementById('btn-' + tabId).classList.add('tab-active');
+        }
+
+        // Form consultation logic
+        function handleConsultation(event) {
+            event.preventDefault();
+            const age = document.getElementById('inputAge').value;
+            const need = document.getElementById('inputNeed').value;
+            const resultBox = document.getElementById('resultBox');
+            const resultText = document.getElementById('resultText');
+
+            resultText.innerHTML = `Đối với đối tượng <strong>"${age}"</strong> có nhu cầu <strong>"${need}"</strong>:<br/><br/>` +
+                `1. <strong>Lựa chọn:</strong> Sử dụng tinh dầu tràm gió nguyên chất 100% đạt hàm lượng Cineol từ 40–60%.<br/>` +
+                `2. <strong>Liều lượng khuyến nghị:</strong> Nhỏ 3–5 giọt vào nước tắm ấm hoặc pha 1–2 giọt với dầu nền để xoa bóp lòng bàn chân và ngực/lưng.<br/>` +
+                `3. <strong>Bảo quản và An toàn:</strong> Đậy kín nắp sau khi dùng, tránh để dính vào mắt hoặc vùng da nhạy cảm.`;
+
+            resultBox.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
